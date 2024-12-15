@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: black;
+}
+
+/* navbar */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+h3 {
+    color: white;
+    padding-left: 50%;
+
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    font-size: 1.1rem;
+}
+
+.navbar ul li a {
+    padding: 5px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 2px solid yellow;
+}
+
+/* home */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 650px;
+    justify-content: center;
+    align-items: center;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    color: white;
+    font-size: xx-large;
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+
+}
+.typing{
+    color: white;
+    border-right: .15rem solid orange;
+    font-size: 2rem;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 60s steps(60)  infinite  alternate ;
+}
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+        
+    }
+}
+
+
+
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(copy.png);
+    z-index: -1;
+    opacity: .9;
+    height: 700px;
+    width: 100%;
+   
+}
+#home{
+    animation-name: tiwari;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes tiwari{
+    0%{background-image: url(copy.png);}
+    25%{background-image: url(wallpaper.jpg);}
+    75%{background-image: url(wp7120158-networks-wallpapers.jpg);}
+    100%{background-image: url(data.png);}
+}
+
+/* about me  */
+
+#aboutme {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.about {
+    display: flex;
+    color: white;
+}
+
+.head {
+    color: white;
+    padding-bottom: 40px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: xx-large;
+}
+
+.about img {
+    margin-right: 100px;
+    margin-bottom: 40px;
+    height: 600px;
+    width: 200px;
+    border: 8px solid white;
+    border-radius: 0%;
+    animation-name: yes;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
+
+}
+@keyframes yes{
+    from{
+        
+        border: 8px solid white;
+    }
+    to{
+        border: 8px solid rgb(234, 11, 11);
+    }
+}
+
+.about h2 {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+
+
+
+.about p {
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* projects */
+
+#projects {
+    margin-top: 30px;
+    font-size: x-large;
+    
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 0%;
+    background: url(aboutme.jpg);
+
+}
+#myprojects {
+   
+    font-family: "Libre Caslon Text", serif;
+    font-size: xx-large;
+}
+
+
+
+#projects::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 50px;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#myprojects{
+    color: white;
+    padding-bottom: 40px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+   
+}
+#html{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 2fr));
+   grid-gap: 2rem;
+   margin-left: 60px;
+}
+#project1 img {
+    height: 300px;
+    width: 300px;
+  
+    border-radius: 5px;
+}
+#project1 img:hover{
+    box-shadow: -10px -10px rgb(8, 255, 61);
+}
+
+#project1 p {
+    color: white;
+}
+#project1 a button{
+    padding: 5px 10px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 20px;
+    background-color: lightgreen;
+    border-radius: 10px;
+    font-size: large;
+}
+#project1 a button:hover{
+    background-color: gold;
+    box-shadow: 5px 5px rgb(151, 244, 1);
+}
+
+
+#project2 img {
+    height: 300px;
+    width: 300px;
+}
+
+#project2 img:hover{
+    box-shadow: -10px -10px rgb(8, 255, 61);
+}
+
+#project2 p {
+    color: white;
+}
+#project2 a button{
+    padding: 5px 10px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 20px;
+   
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+#project2 a button:hover{
+    background-color: gold;
+    box-shadow: 5px 5px rgb(151, 244, 1);
+}
+
+#project3 img {
+    height: 300px;
+    width: 300px;
+}
+
+#project3 img:hover{
+    box-shadow: -10px -10px rgb(8, 255, 61);
+}
+
+#project3 p {
+    color: white;
+}
+#project3 a button{
+    padding: 5px 10px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    margin-left: 20px;
+    
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+#project3 a button:hover{
+    background-color: gold;
+    box-shadow: 5px 5px rgb(151, 244, 1);
+}
+
+#project4 img {
+    height: 300px;
+    width: 300px;
+}
+
+#project4 img:hover{
+    box-shadow: -10px -10px rgb(8, 255, 61);
+}
+#project4 p {
+    color: white;
+}
+#project4 a button{
+    padding: 5px 10px;
+   
+    margin-left: 20px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+#project4 a button:hover{
+    background-color: gold;
+    box-shadow: 5px 5px rgb(151, 244, 1);
+}
+
+
+#project5 img {
+    height: 300px;
+    width: 300px;
+}
+
+#project5 img:hover{
+    box-shadow: -10px -10px rgb(8, 255, 61);
+}
+
+#project5 p {
+    color: white;
+}
+#project5 a button{
+    padding: 5px 10px;
+ 
+    margin-left: 20px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+#project5 a button:hover{
+    background-color: gold;
+    box-shadow: 5px 5px rgb(151, 244, 1);
+}
+
+#project6 img {
+    height: 300px;
+    width: 300px;
+}
+
+#project6 img:hover{
+    box-shadow: -10px -10px rgb(8, 255, 61);
+}
+
+#project6 p {
+    color: white;
+}
+#project6 a button{
+    background-color: lightgreen;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+#project6 a button:hover{
+    background-color: gold;
+    box-shadow: 5px 5px rgb(151, 244, 1);
+}
+#details p {
+    color: white;
+}
+
+/* reach us  */
+
+#reach {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: italic;
+   
+    
+}
+#use{
+    font-size: 5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+}
+
+#submit:hover {
+    background-color: green;
+}
+
+.form:hover {
+    box-shadow: 5px 5px white;
+
+}
