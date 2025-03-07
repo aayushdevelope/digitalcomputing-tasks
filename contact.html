@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Beau+Rivage&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Monsieur+La+Doulaise&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <div class="nav" id="navbar">
+        <button><a href="practice.html" >Home</a></button>&nbsp;
+        <button><a href="about.html" > About</a></button>&nbsp;
+        <button><a href="projects.html" >Projects</a></button>&nbsp;
+        <button><a href="Contact.html">Contact</a></button>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars">Menu</i></a>
+    </div>
+    <div class="contact">
+        <div class="cont"><u><h1>Contact&nbsp;us</h1></u></div>
+        <div>
+            <form action="#">
+                <label for="fname">First Name</label>
+                <input type="text" name="firstname" id="fname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastname" id="lname" placeholder="Your last name..">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email" placeholder="Email">
+                <label for="Gender">Gender</label>
+                <select name="Gender" id="Gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <label for="country">Country</label>
+                <select name="country" id="country">
+                    <option value="India" >India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Usa">USA</option>
+                </select>
+                
+
+                <input type="submit" value="submit" id="submit">
+                
+            </form>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav";
+        }
+    }
+    
+    
+    </script>
+    
+</body>
+</html>
